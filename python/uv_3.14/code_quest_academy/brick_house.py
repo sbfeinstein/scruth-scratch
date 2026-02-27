@@ -6,7 +6,7 @@ def is_possible(num_small, num_large, target_length):
     remaining_small = num_small
     remaining_target = target_length
 
-    while remaining_target > 0 and remaining_large > 0 and remaining_target >= 5:
+    while remaining_target >= 5 and remaining_large > 0:
         remaining_target -= 5
         remaining_large -= 1
 
