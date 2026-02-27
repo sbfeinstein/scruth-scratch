@@ -20,7 +20,7 @@ def main():
     :return:
     """
     num_cases = int(sys.stdin.readline())
-    for lines_read in range(num_cases):
+    for _ in range(num_cases):
         first, second = sys.stdin.readline().split(',')
         print(f"{is_coprime(int(first), int(second))}")
 

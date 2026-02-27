@@ -24,7 +24,7 @@ def main():
     :return:
     """
     num_cases = int(sys.stdin.readline())
-    for lines_read in range(num_cases):
+    for _ in range(num_cases):
         num_small, num_large, target_length = sys.stdin.readline().split(' ')
         print(f"{is_possible(int(num_small), int(num_large), int(target_length))}")
 
