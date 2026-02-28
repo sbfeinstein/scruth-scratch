@@ -45,7 +45,7 @@ def main():
     """
     https://lmcodequestacademy.com/api/static/problems/air-terminator-control
     run (assumes correct python installed and active, e.g. via the uv framework of the parent folder) via:
-        python air_terminator_control.py < inputs/air_terminator_control.in
+        python air_terminator_control.py < inputs/air_terminator_control_1.in
     :return:
     """
     num_cases = int(sys.stdin.readline())
