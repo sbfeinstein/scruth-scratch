@@ -14,12 +14,14 @@ def threat_level(is_friendly, data_points):
     num_continuous = 1
     max_continuous = 1
     for data_point in data_points:
-        entry_hour, entry_minute = data_point.split(':')
-        entry_time = datetime.datetime(2026, 2, 28, int(entry_hour),int(entry_minute), 0, 0)
+        entry_hour, entry_minute = data_point.split(":")
+        entry_time = datetime.datetime(
+            2026, 2, 28, int(entry_hour), int(entry_minute), 0, 0
+        )
         diff = entry_time - prev_entry_time if prev_entry_time else None
         prev_entry_time = entry_time
 
-        if diff == datetime.timedelta(0,0,0,0,15,0,0):
+        if diff == datetime.timedelta(0, 0, 0, 0, 15, 0, 0):
             num_continuous += 1
         else:
             num_entries += 1
@@ -41,6 +43,7 @@ def threat_level(is_friendly, data_points):
     else:
         return "NONE"
 
+
 def main():
     """
     https://lmcodequestacademy.com/api/static/problems/air-terminator-control
@@ -50,7 +53,7 @@ def main():
     """
     num_cases = int(sys.stdin.readline())
     for _ in range(num_cases):
-        is_friendly, num_data_points = sys.stdin.readline().split(' ')
+        is_friendly, num_data_points = sys.stdin.readline().split(" ")
         data_points = [sys.stdin.readline() for _ in range(int(num_data_points))]
         print(f"{threat_level(is_friendly, data_points)}")
 

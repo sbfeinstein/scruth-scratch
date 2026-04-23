@@ -16,6 +16,7 @@ def is_possible(num_small, num_large, target_length):
 
     return remaining_target == 0
 
+
 def main():
     """
     https://lmcodequestacademy.com/api/static/problems/brick-house
@@ -25,7 +26,7 @@ def main():
     """
     num_cases = int(sys.stdin.readline())
     for _ in range(num_cases):
-        num_small, num_large, target_length = sys.stdin.readline().split(' ')
+        num_small, num_large, target_length = sys.stdin.readline().split(" ")
         print(f"{is_possible(int(num_small), int(num_large), int(target_length))}")
 
 

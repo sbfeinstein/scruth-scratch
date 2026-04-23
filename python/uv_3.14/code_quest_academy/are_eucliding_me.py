@@ -12,6 +12,7 @@ def is_coprime(first, second):
         print(f"{minuend}-{subtrahend}={diff}")
         return is_coprime(subtrahend, diff)
 
+
 def main():
     """
     https://lmcodequestacademy.com/api/static/problems/are-eucliding-me
@@ -21,7 +22,7 @@ def main():
     """
     num_cases = int(sys.stdin.readline())
     for _ in range(num_cases):
-        first, second = sys.stdin.readline().split(',')
+        first, second = sys.stdin.readline().split(",")
         print(f"{is_coprime(int(first), int(second))}")
 
 

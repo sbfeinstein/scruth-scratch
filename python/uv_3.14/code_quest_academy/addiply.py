@@ -10,7 +10,7 @@ def main():
     """
     num_cases = int(sys.stdin.readline())
     for _ in range(num_cases):
-        first, second = sys.stdin.readline().split(' ')
+        first, second = sys.stdin.readline().split(" ")
         print(f"{int(first) + int(second)} {int(first) * int(second)}")
 
 
