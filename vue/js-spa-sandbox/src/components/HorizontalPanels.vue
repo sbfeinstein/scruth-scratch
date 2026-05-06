@@ -6,7 +6,7 @@ defineProps({
     type: String,
     required: false,
     default: '50%',
-  },
+  }
 })
 
 const baseId = useId()

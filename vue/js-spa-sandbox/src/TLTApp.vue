@@ -1,6 +1,7 @@
 <script setup>
 import HorizontalPanels from '@/components/HorizontalPanels.vue'
 import VerticalPanels from '@/components/VerticalPanels.vue'
+import RuneKeyboard from '@/components/RuneKeyboard.vue'
 </script>
 
 <template>
@@ -8,16 +9,12 @@ import VerticalPanels from '@/components/VerticalPanels.vue'
     <template #left>
       <VerticalPanels topInitialHeight="60%">
         <template #top>
-          Rune Keyboard
+          <RuneKeyboard />
         </template>
-        <template #bottom>
-          Rune Editor
-        </template>
+        <template #bottom>Letter Editor</template>
       </VerticalPanels>
     </template>
-    <template #right>
-      Rune Document
-    </template>
+    <template #right>Document</template>
   </HorizontalPanels>
 </template>
 

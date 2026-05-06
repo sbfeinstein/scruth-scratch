@@ -3,7 +3,7 @@ import './assets/tunic.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
-import App from './TunicApp.vue'
+import App from './TLTApp.vue'
 import router from './router'
 
 const app = createApp(App)
