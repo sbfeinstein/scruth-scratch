@@ -1,0 +1,26 @@
+{
+  "name": "nvm_25.9.0_scratch",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "run-s lint:*",
+    "lint:oxlint": "oxlint . --fix",
+    "lint:eslint": "eslint . --fix --cache",
+    "format": "prettier --write --experimental-cli src/"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-oxlint": "~1.60.0",
+    "globals": "^17.5.0",
+    "oxlint": "~1.60.0",
+    "prettier": "3.8.3"
+  },
+  "engines": {
+    "node": "25.9.0"
+  }
+}
