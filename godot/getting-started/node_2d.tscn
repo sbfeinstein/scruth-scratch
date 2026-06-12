@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://frg5utmh6ke1"]
+
+[ext_resource type="PackedScene" uid="uid://bpqkklp31vnan" path="res://w00t_sprite_2d.tscn" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://d1leil4n6tuhw" path="res://w00t_sprite_node2D_script.gd" id="2_0e48y"]
+
+[node name="Node2D" type="Node2D" unique_id=188172251]
+
+[node name="W00t Sprite (Instance)" parent="." unique_id=1388191200 instance=ExtResource("1_wtcfe")]
+position = Vector2(450, 235)
+script = ExtResource("2_0e48y")
+
+[node name="VisibilityTimer" type="Timer" parent="W00t Sprite (Instance)" unique_id=35178751]
+wait_time = 1.5
+autostart = true
+
+[node name="Button" type="Button" parent="." unique_id=2055885658]
+offset_left = 38.0
+offset_top = 33.0
+offset_right = 167.0
+offset_bottom = 76.0
+text = "Toggle Motion"
+
+[connection signal="pressed" from="Button" to="W00t Sprite (Instance)" method="_on_button_pressed"]
