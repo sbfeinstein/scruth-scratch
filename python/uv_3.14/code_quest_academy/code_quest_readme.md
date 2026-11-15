@@ -2,6 +2,8 @@
 
 Related to the Feb 28, 2026 [Code Quest](https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest.html) competition from Lockheed Martin.  And later years!
 
+[Continue Your Quest](https://lmcodequestacademy.com/quest) page has practice problems within Code Quest Academy.
+
 Child directories contain programs made for fun and practice based on their sample problems.
 
 # Running

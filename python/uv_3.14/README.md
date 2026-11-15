@@ -4,8 +4,11 @@ Basic project initialized by `uv init --python 3.14`, for learning!
 Made manual changes as well.
 
 # IntelliJ
-Can easily use the generated virtual environment by going into `Project Structure...`.
-Edit the SDK, choose `Select existing`, type `uv` and it should populate the Environment correctly automatically.
+Can easily use the generated virtual environment by going into `Project Structure... > Platform Settings > SDKs.
+
+Add New SDK with the plus icon and then choose `Select existing` and set Type to `uv` (then `OK`).
+
+Pick the environment and it should update the Project to use it correctly.
 
 ![intellij_add_python_interpreter.png](doc/intellij_add_python_interpreter.png)
 
