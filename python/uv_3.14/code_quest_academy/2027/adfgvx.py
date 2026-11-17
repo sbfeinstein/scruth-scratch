@@ -25,10 +25,10 @@ def unsort_encrypted_message(code_word, encrypted_message):
     current_col = 0
     current_row = list(" " * code_word_len)
     for idx, c in enumerate(encrypted_message):
-        from_index = code_word_map[current_col]["sorts_from_index"]
+        from_index = code_word_map[current_col]
         while idx + from_index > len(encrypted_message):
             current_col += 1
-            from_index = code_word_map[current_col]["sorts_from_index"]
+            from_index = code_word_map[current_col]
 
         current_row[from_index] = c
         current_col += 1
@@ -42,13 +42,7 @@ def unsort_encrypted_message(code_word, encrypted_message):
 
 def build_code_word_map(code_word):
     code_word_sorted = sorted(code_word)
-
-    result_map = defaultdict(dict)
-    for idx, c in enumerate(code_word):
-        sorts_to_index = code_word_sorted.index(c)
-        result_map[idx]["sorts_to_index"] = sorts_to_index
-        result_map[sorts_to_index]["sorts_from_index"] = idx
-    return result_map
+    return {code_word_sorted.index(c): idx for idx, c in enumerate(code_word)}
 
 
 def convert_to_cleartext(substitution_grid, unsorted_encrypted_message):
