@@ -19,7 +19,7 @@ def is_possible(num_small, num_large, target_length):
 
 def main():
     """
-    https://lmcodequestacademy.com/api/static/problems/brick-house
+    https://lmcodequestacademy.com/problem/brick-house
     run (assumes correct python installed and active, e.g. via the uv framework of the parent folder) via:
         python brick_house.py < inputs/brick_house_1.in
     :return:
