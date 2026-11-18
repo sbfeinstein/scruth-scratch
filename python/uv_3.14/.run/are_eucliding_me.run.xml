@@ -15,7 +15,7 @@
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
     <option name="RUN_TOOL" value="true" />
     <option name="RUN_AS_SCRIPT" value="false" />
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code_quest_academy/2026/air_terminator_control.py" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code_quest_academy/2026/are_eucliding_me.py" />
     <option name="PARAMETERS" value="" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
