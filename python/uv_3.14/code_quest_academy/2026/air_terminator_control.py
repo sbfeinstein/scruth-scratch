@@ -46,7 +46,7 @@ def threat_level(is_friendly, data_points):
 
 def main():
     """
-    https://lmcodequestacademy.com/api/static/problems/air-terminator-control
+    https://lmcodequestacademy.com/problem/air-terminator-control
     run (assumes correct python installed and active, e.g. via the uv framework of the parent folder) via:
         python air_terminator_control.py < inputs/air_terminator_control_1.in
     :return:
