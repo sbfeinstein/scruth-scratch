@@ -17,6 +17,8 @@ def is_coprime(first: int, second: int):
 
 def main():
     """
+    Problem: Problem 78: Are Eucliding Me?
+    Difficulty: Medium
     https://lmcodequestacademy.com/problem/are-eucliding-me
     run (assumes correct python installed and active, e.g. via the uv framework of the parent folder) via:
         python are_eucliding_me.py < inputs/are_eucliding_me_1.in

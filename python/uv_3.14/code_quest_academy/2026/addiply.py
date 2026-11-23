@@ -3,6 +3,8 @@ import sys
 
 def main():
     """
+    Problem 44: Addiply
+    Difficulty: Easy
     https://lmcodequestacademy.com/problem/addiply
     run (assumes correct python installed and active, e.g. via the uv framework of the parent folder) via:
         python addiply.py < inputs/addiply_1.in
