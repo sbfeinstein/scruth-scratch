@@ -1,6 +1,7 @@
 import re
 import sys
 
+
 def pattern_to_regex(pattern, components=None, is_alternatives=False) -> str:
     # Regex stuff, see:
     #   https://docs.python.org/3/howto/regex.html
@@ -61,13 +62,9 @@ def process(patterns, data_stream):
             if not result or not result.span(0):
                 continue
             current_span = result.span(0)
-            if not result_span:
-                result_span = current_span
-                result_pattern = pattern
-            elif current_span[0] < result_span[0]:
-                result_span = current_span
-                result_pattern = pattern
-            elif current_span[0] == result_span[0] and current_span[1] > result_span[1]:
+            if not result_span \
+                    or (current_span[0] < result_span[0]) \
+                    or (current_span[0] == result_span[0] and current_span[1] > result_span[1]):
                 result_span = current_span
                 result_pattern = pattern
         return result_span, result_pattern
@@ -103,7 +100,7 @@ def main():
     Difficulty: Hard
     https://lmcodequestacademy.com/problem/alien-waveform
     run (assumes correct python installed and active, e.g. via the uv framework of the parent folder) via:
-        python are_eucliding_me.py < inputs/alien_waveform_1.in
+        python alien_waveform.py < inputs/alien_waveform_1.in
     :return:
     """
     # sys.stdin = io.StringIO(SAMPLE_INPUT)
